@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Biblioteca Digital</h1>
+        
+        <div class="form-container">
+            <h2>Adicionar Livro</h2>
+            <form id="form-adicionar">
+                <input type="text" id="titulo" placeholder="Título" required>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <input type="number" id="paginas" placeholder="Páginas" required>
+                <input type="text" id="genero" placeholder="Gênero (opcional)">
+                <button type="submit">Adicionar Livro</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Buscar por Autor</h2>
+            <form id="form-buscar">
+                <input type="text" id="busca-autor" placeholder="Nome do autor" required>
+                <button type="submit">Buscar</button>
+                <button type="button" id="limpar-busca">Mostrar Todos</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Editar Livro</h2>
+            <form id="form-editar">
+                <input type="number" id="editar-id" placeholder="ID do Livro" required>
+                <input type="text" id="editar-titulo" placeholder="Novo Título">
+                <input type="text" id="editar-autor" placeholder="Novo Autor">
+                <input type="number" id="editar-paginas" placeholder="Novo Nº de Páginas">
+                <button type="submit">Atualizar Livro</button>
+            </form>
+        </div>
+
+        <div id="lista-livros">
+            <h2>Livros Cadastrados</h2>
+            <div id="livros-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
